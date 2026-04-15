@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Overview page for the Grotaxe GitHub Pages hub, tied to the repository README and future documentation surfaces."
+    >
+    <meta name="theme-color" content="#0d0f11">
+    <title>Grotaxe | Links and Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body data-page="links">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="../index.html" aria-label="Grotaxe home">
+          <span class="brand-mark">GX</span>
+          <span class="brand-copy">
+            <strong>Grotaxe</strong>
+            <span>GitHub Pages Hub</span>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="../index.html#about">About</a></li>
+            <li><a class="nav-link" href="../index.html#projects">Projects</a></li>
+            <li><a class="nav-link active" href="links.html">Links</a></li>
+            <li><a class="nav-link" href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+          <span class="theme-toggle__label">Theme</span>
+          <span class="theme-toggle__value" data-theme-label>Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-main" id="main-content">
+      <div class="container">
+        <a class="back-link" href="../index.html">Back to hub</a>
+
+        <section class="page-hero">
+          <div class="page-layout">
+            <div class="page-copy" data-reveal>
+              <p class="eyebrow">Links / Overview</p>
+              <h1>Repository context, public entry points, and a readable hub summary.</h1>
+              <p>
+                This page works as the navigation-oriented presentation layer for the repository README. It gives the
+                hub a human-readable overview now, while leaving clean space for future docs, reference material, and
+                technical notes as the project surface grows.
+              </p>
+
+              <div class="cta-row">
+                <a class="button button--primary" href="../README.md" target="_blank" rel="noopener noreferrer">
+                  Open README.md
+                </a>
+                <a
+                  class="button button--ghost"
+                  href="https://github.com/grotaxe/grotaxe-hub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View repository
+                </a>
+              </div>
+            </div>
+
+            <aside class="page-panel" data-reveal>
+              <h2>What this page covers</h2>
+              <ul class="overview-list">
+                <li>
+                  <strong>Hub identity</strong>
+                  <span>Why the site exists and what kind of work it is meant to surface.</span>
+                </li>
+                <li>
+                  <strong>Repository map</strong>
+                  <span>How the landing page, subpages, assets, and project stubs are organized.</span>
+                </li>
+                <li>
+                  <strong>Expansion path</strong>
+                  <span>Where docs, references, and deeper project material can be added next.</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="details-grid">
+          <article class="body-card" data-reveal>
+            <p class="eyebrow">Summary</p>
+            <h2>What the hub is</h2>
+            <p>
+              The Grotaxe hub is a static, build-free GitHub Pages site meant to present a technical identity rather
+              than a resume. It frames projects around system design, self-hosted infrastructure, embedded logic,
+              operator interfaces, protocol concepts, and long-term product architecture.
+            </p>
+            <p>
+              The homepage is intentionally concise. This page carries the overview layer so the landing experience can
+              stay sharp while the repository still offers enough context for readers, collaborators, and future docs.
+            </p>
+          </article>
+
+          <article class="body-card" data-reveal>
+            <p class="eyebrow">Structure</p>
+            <h2>Current repository map</h2>
+            <ul class="structure-list">
+              <li>
+                <strong>Hub homepage</strong>
+                <span>`index.html` anchors the site around About, Projects, Links, and Contacts.</span>
+              </li>
+              <li>
+                <strong>Shared surface layer</strong>
+                <span>`assets/css/style.css` and `assets/js/main.js` keep the design and behavior consistent.</span>
+              </li>
+              <li>
+                <strong>Dedicated subpages</strong>
+                <span>`pages/links.html`, `pages/contacts.html`, and project stubs are ready for future growth.</span>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <p class="footer-title">Grotaxe</p>
+          <p class="footer-copy">GitHub Pages Hub</p>
+        </div>
+        <div>
+          <p class="footer-copy">Independent systems, projects, and experiments.</p>
+          <p class="footer-copy">2016-<span data-current-year>2026</span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
